@@ -1,111 +1,268 @@
+
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Build My Dream Gaming Setup ❤️</title>
 
-    <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    body {
+      margin: 0;
+      padding: 25px 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111111;
+      color: #ffffff;
+      text-align: center;
+    }
 
-    <meta name="theme-color" content="#8c1830">
+    .top-line {
+      height: 7px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      border-radius: 20px;
+      background: linear-gradient(
+        to right,
+        #9b001b,
+        #ffffff,
+        #d4af37,
+        #9b001b
+      );
+    }
 
-    <title>Strawberry Trev | Gaming Fundraiser</title>
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px 22px;
+      background: #ffffff;
+      color: #222222;
+      border-radius: 24px;
+      box-shadow: 0 8px 30px rgba(155, 0, 27, 0.3);
+    }
 
-    <style>
+    .heart {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
 
-        :root {
+    h1 {
+      color: #9b001b;
+      font-size: 30px;
+      line-height: 1.25;
+      margin: 10px 0;
+    }
 
-            --red: #8c1830;
+    .subtitle {
+      color: #666666;
+      line-height: 1.6;
+      font-size: 16px;
+    }
 
-            --dark-red: #570b1d;
+    .goal-box {
+      background: #fff3f4;
+      border: 2px solid #9b001b;
+      border-radius: 18px;
+      padding: 18px;
+      margin: 25px 0;
+    }
 
-            --black: #171519;
+    .goal-label {
+      font-size: 14px;
+      color: #555555;
+      margin-bottom: 6px;
+    }
 
-            --white: #ffffff;
+    .goal-amount {
+      font-size: 36px;
+      font-weight: bold;
+      color: #9b001b;
+    }
 
-            --gold: #ffcc45;
+    .progress-track {
+      width: 100%;
+      height: 16px;
+      background: #e5e5e5;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
 
-            --pink: #fff0f3;
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(to right, #9b001b, #d4af37);
+      border-radius: 20px;
+    }
 
-        }
+    .progress-text {
+      font-size: 13px;
+      color: #666666;
+      margin-top: 9px;
+    }
 
-        * {
+    h2 {
+      color: #9b001b;
+      font-size: 22px;
+      margin-top: 28px;
+    }
 
-            box-sizing: border-box;
+    .description {
+      text-align: left;
+      line-height: 1.8;
+      color: #444444;
+      font-size: 15px;
+    }
 
-        }
+    .donate-button {
+      display: block;
+      background: #9b001b;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 17px 20px;
+      border-radius: 14px;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 25px 0 12px;
+      box-shadow: 0 5px 0 #620011;
+      transition: transform 0.15s;
+    }
 
-        body {
+    .donate-button:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #620011;
+    }
 
-            margin: 0;
+    .small-note {
+      font-size: 12px;
+      color: #777777;
+      line-height: 1.6;
+    }
 
-            min-height: 100vh;
+    .thank-you {
+      margin-top: 25px;
+      padding: 18px;
+      background: #fff3f4;
+      border-radius: 16px;
+      color: #444444;
+      line-height: 1.7;
+    }
 
-            font-family: -apple-system, BlinkMacSystemFont,
+    footer {
+      max-width: 600px;
+      margin: 22px auto 0;
+      color: #aaaaaa;
+      font-size: 12px;
+      line-height: 1.7;
+    }
 
-                         "Segoe UI", Arial, sans-serif;
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 25px;
+      }
 
-            background: var(--black);
+      .container {
+        padding: 25px 17px;
+      }
+    }
+  </style>
+</head>
 
-            color: var(--white);
+<body>
 
-            display: flex;
+  <div class="top-line"></div>
 
-            flex-direction: column;
+  <main class="container">
 
-        }
+    <div class="heart">❤️ 🏈</div>
 
-        .top-line {
+    <h1>Help Build My Dream Gaming Setup!</h1>
 
-            height: 6px;
+    <p class="subtitle">
+      Thanks for taking a moment to check out my project!
+      Every bit of support means a lot to me. ❤️
+    </p>
 
-            background: linear-gradient(
+    <section class="goal-box">
+      <div class="goal-label">MY FUNDRAISING GOAL</div>
+      <div class="goal-amount">$1,500</div>
 
-                90deg,
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+      </div>
 
-                var(--red) 0 40%,
+      <div class="progress-text">
+        $0 raised toward my $1,500 goal
+      </div>
+    </section>
 
-                var(--gold) 40% 60%,
+    <h2>🎮 What I'm Working Toward</h2>
 
-                var(--white) 60% 80%,
+    <div class="description">
+      I'm working toward creating my dream gaming setup with an
+      Arizona Cardinals-inspired bedroom, dual monitors, a gaming
+      desk, a keyboard and mouse, and equipment to help me make
+      better gaming videos.
 
-                var(--black) 80%
+      <br><br>
 
-            );
+      Gaming and creating content are things I really enjoy.
+      Having a dedicated space would help me keep improving,
+      learning, and making videos.
 
-        }
+      <br><br>
 
-        header 
+      <strong>Here's what the funds will help with:</strong>
 
+      <br>
+      ❤️ Dual monitors and display accessories
+      <br>
+      🖤 Gaming desk and setup accessories
+      <br>
+      🏈 Cardinals-inspired decorations
+      <br>
+      🎥 Equipment for creating gaming videos
+    </div>
 
-<a
-  href="https://cash.app/$vampyretrevor"
-  class="donate-button"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  💚 Donate with Cash App
-</a>
+    <h2>💝 Support My Goal</h2>
 
-<style>
-.donate-button {
-  display: block;
-  width: 100%;
-  padding: 16px;
-  background: #8c1830;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  border: 2px solid #ffcc45;
-  border-radius: 14px;
-  box-sizing: border-box;
-}
-.donate-button:hover {
-  background: #570b1d;
-}
-</style>
+    <p class="subtitle">
+      If you'd like to contribute, you can use my Cash App link below.
+      Please only contribute if it's comfortable for you.
+    </p>
 
-        
+    <a
+      class="donate-button"
+      href="https://cash.app/$vampyretrevor"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ❤️ Support Me on Cash App
+    </a>
+
+    <p class="small-note">
+      The button opens Cash App. Please double-check the recipient
+      before sending money.
+    </p>
+
+    <div class="thank-you">
+      <strong>Thank you for being here! ❤️</strong>
+      <br>
+      Whether you donate, share my page, or simply show support,
+      I appreciate you taking the time to check out my goal.
+    </div>
+
+  </main>
+
+  <footer>
+    This is a personal fundraiser and is not affiliated with,
+    sponsored by, or endorsed by the Arizona Cardinals or the NFL.
+    <br><br>
+    Made with ❤️ and a little football spirit.
+  </footer>
+
+</body>
+</html>
